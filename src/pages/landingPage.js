@@ -12,15 +12,27 @@ import { TimePicker } from 'antd';
 import 'antd/dist/antd.css';
 import moment from 'moment';
 import Popup from './popup';
+import Topbar from '../components/topbar/topbar'
+import Sidebar from '../components/sidebar/sidebar'
+import Feed from "../components/feed/feed";
+import Rightbar from "../components/rightbar/Rightbar"
+
 
 
 const LandingPage = () => {
 	console.log("landing page")
-	return(
-		<div>
-			<h2>landing!</h2>
-		</div>
-	)
+	return (
+        <>
+        <Topbar />
+        <div>
+            <Sidebar />
+            <Feed />
+            <Rightbar />
+        </div>
+        </>
+        
+    );
 }
+
 
 export default LandingPage;
