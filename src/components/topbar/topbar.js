@@ -1,5 +1,11 @@
 import "./topbar.css"
+import SearchBar from "./searchbar.js"
+import React from 'react'
 import { Search, Person, Chat, Notifications } from "@mui/icons-material"
+
+const saved = window.localStorage.getItem("user");
+const username = JSON.parse(saved).name
+
 
 export default function Topbar() {
     return (
@@ -7,10 +13,15 @@ export default function Topbar() {
             <div className="topbarLeft">
                 <span className="logo">IU Social</span>
             </div>
+            <div style={{color: "white"}}>
+                Hello {username} !
+            </div>
             <div className="topbarCenter">
                 <div className="searchbar">
                     <Search className="searchIcon" />
-                    <input placeholder="Search for friend, post or video" className="searchInput"/> </div>
+                    {/* <input placeholder="Search for friend, post or video" className="searchInput"/>  */}
+                    <SearchBar/>
+                    </div>
             </div>
             <div className="topbarRight">
                 <div className="topbarLinks">

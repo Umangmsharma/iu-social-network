@@ -1,0 +1,39 @@
+.dropdown-menu{
+    position:absolute;
+    transform: translateY(7px);
+    width: 31%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: auto;
+    max-height: 150px;
+    background-color: #fff;
+}
+
+.dropdown-item{
+    padding:5px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover{
+    background-color: #9fc3f870;
+}
+
+/* css for individualsearch.js */
+
+.first{
+    list-style-type: none;
+    white-space: 25px;
+    padding: 0;
+    border: 1px solid grey;
+    overflow: auto;
+    background-color: white;
+    margin-top: 0%;
+}
+.second{
+    display: table-cell;
+    font-size: 17px;
+    color: gray;
+    text-align: center;
+    padding: 14px 44px;
+    text-decoration: none;
+}

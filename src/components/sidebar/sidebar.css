@@ -4,6 +4,7 @@
     overflow-y: scroll;
     position: sticky;
     top: 50px;
+    background-color:gainsboro;
   }
   
   ::-webkit-scrollbar {
@@ -17,6 +18,7 @@
   }
   
   .sidebarWrapper {
+    margin-top: 50px;
     padding: 20px;
   }
   

@@ -29,8 +29,8 @@
     width: 100%;
     height: 30px;
     background-color: white;
-    border-radius: 30px;
-    display: flex;
+    border-radius: 18px;
+    display: -webkit-box;
     align-items: center;
   }
   
@@ -39,12 +39,12 @@
     margin-left: 10px;
   }
     
-  .searchInput {
+  .searchInputBar {
     border: none;
-    width: 70%;
+    /* width: 140%; */
   }
   
-  .searchInput:focus {
+  .searchInputBar:focus {
     outline: none;
   }
   
