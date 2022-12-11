@@ -34,6 +34,14 @@ const userSchema = new Schema(
 			data: String,
 			default: "",
 		},
+		friends:{
+			type: [String],
+			default : undefined
+		},
+		blocklist:{
+			type: [String],
+			default : ""
+		}
 	},
 
 	{ timestamps: true }
